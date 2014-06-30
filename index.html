@@ -9,13 +9,13 @@
             interestsArray, $interestsLabels;
 
         if (nameMatch && nameMatch[1].length > 0) {
-            $("#fieldName").val(' ' + decodeURI(nameMatch[1]));
+            $("#fieldName").val(' ' + decodeURIComponent(nameMatch[1]));
         }
         if (emailMatch && emailMatch[1].length > 0) {
-            $("#fieldEmail").val(' ' + decodeURI(emailMatch[1]));
+            $("#fieldEmail").val(' ' + decodeURIComponent(emailMatch[1]));
         }
         if (interests && interests[1].length > 0) {
-            interestsArray = decodeURI(interests[1]).split(',');
+            interestsArray = decodeURIComponent(interests[1]).split(',');
             // grab all the labels from the html - we'll use those to see if there's a match
             // because the input elements themselves don't contain the text
             $interestsLabels = $("label[for^='fieldjkjhklr-'");
