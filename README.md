@@ -3,6 +3,7 @@ confirmwithcustomfields
 Barebones proof of concept for transferring custom field values from list to list via an email click.
 
 The way this is used:
+
 1. Modify the index.html so it works with your target form code.
 2. That means you might need to add javascript to handle other types of form value
 3. Setup a campaign that links to: http://yoursite.com/location/of/script/?name=[fullname]&email=[email]&interests=[interests]
