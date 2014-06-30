@@ -15,7 +15,8 @@ The way this is used:
 There's a bunch of things that are hardcoded in this example that would need to be modified or generalised or improved
 
 1. The form code points to a form on my campaign monitor account
-2. The javascript uses the labels which belong to my form
+2. The javascript is hard-coded for the labels which belong to the interests field in *my* form
 3. The design is clunky (ie it shows the form before it submits)
+4. This only shows an example of handling with one type of custom field (multi-option select many). Text and number fields would be much simpler. Date fields would also be quite hard.
 
 All this is achievable, but this is a *proof of concept*, it's not intended to be dropped into production.
